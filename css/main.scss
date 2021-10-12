@@ -108,6 +108,11 @@ I really...do not know why it works lol*/
 
 /////***** Banner/Showcase Section *****/////
 
+/* Played around a lot with the grid to get positioning
+right, but I still can't figure out how to get the 
+section title up so close to the image...maybe
+wrap it in a div?? */
+
 .showcase {
     display: grid;
     min-height: 90vh;
@@ -157,3 +162,34 @@ I really...do not know why it works lol*/
         }
     }
 }
+
+/////***** Media Query for Showcase section *****/////
+
+/* This will align the items correctly,
+with the info going up on top of the image
+grid row placement is extremely helpful in this, but
+the tablet view is still kinda janky */
+
+@media only screen and (max-width: 1200px){
+
+    .showcase{
+        grid-template-columns: 10% 1fr 10%;
+        img{
+            width: 100%;
+            object-fit:contain;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            margin-top: 10%;
+        }
+        .info {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            width: 80%;
+            margin-top: 15%;
+            margin-left: 10%;
+        }
+    }
+}
+
+
+

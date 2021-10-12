@@ -93,6 +93,10 @@ I really...do not know why it works lol*/
   }
 }
 
+/* Played around a lot with the grid to get positioning
+right, but I still can't figure out how to get the 
+section title up so close to the image...maybe
+wrap it in a div?? */
 .showcase {
   display: -ms-grid;
   display: grid;
@@ -157,5 +161,39 @@ I really...do not know why it works lol*/
   border-radius: 5px;
   outline: none;
   color: #175bf5;
+}
+
+/* This will align the items correctly,
+with the info going up on top of the image
+grid row placement is extremely helpful in this, but
+the tablet view is still kinda janky */
+@media only screen and (max-width: 1200px) {
+  .showcase {
+    -ms-grid-columns: 10% 1fr 10%;
+        grid-template-columns: 10% 1fr 10%;
+  }
+  .showcase img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    margin-top: 10%;
+  }
+  .showcase .info {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    width: 80%;
+    margin-top: 15%;
+    margin-left: 10%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
