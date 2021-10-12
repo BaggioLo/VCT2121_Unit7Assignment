@@ -2,7 +2,7 @@
 
 //font-family: 'Roboto', sans-serif;
 
-
+$primary-light: #fff;
 $primary-color: #175bf5;
 $primary-bckg: #d0defd;
 $primary-text: #273a63;
@@ -23,6 +23,17 @@ body{
     font-family: $body-font;
 }
 
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary-light;
+}
+
+/////***** Navigation *****/////
+.nav-section{
+    height: 10vh;
+    background-color: $primary-color;
+}
 .navbar {
     ul {
     display: flex;
@@ -46,9 +57,14 @@ body{
             font-size: 1.5rem;
         }
 
-        
+        .signup-button{
+            border: 2px solid white;
+            border-radius: 15px;
+        }
     }
 }
+
+/////***** Nav Bar Media Screen Sizes *****/////
 
 /* Basically couldn't figure out how to get the 
 hamburger bars to not display, it used to be display:none
@@ -83,6 +99,10 @@ I really...do not know why it works lol*/
 
     .active {
         display: block;
+    }
+    .signup-button{
+        border: 2px solid white;
+        border-radius: 5px;
     }
 }
 

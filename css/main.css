@@ -13,6 +13,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.nav-section {
+  height: 10vh;
+  background-color: #175bf5;
+}
+
 .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,6 +51,11 @@ body {
       -ms-flex: 1;
           flex: 1;
   font-size: 1.5rem;
+}
+
+.navbar ul .signup-button {
+  border: 2px solid white;
+  border-radius: 15px;
 }
 
 /* Basically couldn't figure out how to get the 
@@ -70,6 +86,10 @@ I really...do not know why it works lol*/
   }
   .active {
     display: block;
+  }
+  .signup-button {
+    border: 2px solid white;
+    border-radius: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
