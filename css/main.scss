@@ -106,4 +106,54 @@ I really...do not know why it works lol*/
     }
 }
 
+/////***** Banner/Showcase Section *****/////
 
+.showcase {
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: 10% repeat(3, minmax(50px, 1fr)) 10%;
+    grid-template-rows: 1fr 2fr 1fr;
+
+    img {
+        grid-row: 1/3;
+        grid-column: 1/4;
+        height:80%;
+        object-fit: cover;
+        align-self: center;
+        justify-self: center;
+        filter: drop-shadow(10px 10px 2px #c8c8c8);
+    }
+
+    .info{
+        grid-column: 4/5;
+        grid-row: 2/4;
+        width: 120%;
+        
+        h3{
+            padding-bottom: 30px;
+            color: gray;
+            letter-spacing: 0.1rem;
+        } 
+
+        p{
+            color: $primary-color;
+            font-size: 2rem;
+            letter-spacing: 0.1rem;
+        }
+
+        button{
+            padding: 5% 7.5% 5% 7.5%;
+            text-transform: uppercase;
+            font-family: $body-font;
+            font-size: .8rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-top: 5%;
+            background: none;
+            border: 2px solid $primary-color;
+            border-radius: 5px;
+            outline:none;
+            color: $primary-color;
+        }
+    }
+}
