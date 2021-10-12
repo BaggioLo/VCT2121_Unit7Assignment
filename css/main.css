@@ -196,4 +196,14 @@ the tablet view is still kinda janky */
     margin-left: 10%;
   }
 }
+
+.photogallery-container {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 100px 300px;
+  grid-gap: 10px;
+}
 /*# sourceMappingURL=main.css.map */
