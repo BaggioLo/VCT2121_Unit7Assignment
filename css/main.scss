@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+//font-family: 'Roboto', sans-serif;
+
+
+$primary-color: #175bf5;
+$primary-bckg: #d0defd;
+$primary-text: #273a63;
+$para-text: 1em;
+$heading-text: 2em;
+$body-font: 'Roboto', sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $primary-bckg;
+    color: $primary-text;
+    font-size: $para-text;
+    font-family: $body-font;
+}
+
+.navbar {
+    ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: $primary-color;
+    color: white;
+    
+        li { 
+            list-style-type: none;
+            padding: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .navbar-logo{
+            flex: 1;
+            font-size: 1.5rem;
+        }
+
+        
+    }
+}
+
+/* Basically couldn't figure out how to get the 
+hamburger bars to not display, it used to be display:none
+on the code lines above, but wouldn't reappear if it went down
+to a smaller screen size, but I added the min-widthbelow  that way
+if it is in desktop mode it won't display at all
+which kinda solved everything for me lol...and
+I really...do not know why it works lol*/
+
+@media (min-width: 600px){
+    .navbar-toggle{
+        display: none;
+    }
+}
+
+//This will get the hamburger menu to appear
+
+@media (max-width: 600px) {
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+    .navbar-toggle{
+        display: block;
+    }
+    .navbar-links {
+        display: none; 
+        width: 100%;
+        text-align: center;
+    }
+}
+
+

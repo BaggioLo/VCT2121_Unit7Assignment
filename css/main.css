@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #d0defd;
+  color: #273a63;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #175bf5;
+  color: white;
+}
+
+.navbar ul li {
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar ul .navbar-logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.5rem;
+}
+
+/* Basically couldn't figure out how to get the 
+hamburger bars to not display, it used to be display:none
+on the code lines above, but wouldn't reappear if it went down
+to a smaller screen size, but I added the min-widthbelow  that way
+if it is in desktop mode it won't display at all
+which kinda solved everything for me lol...and
+I really...do not know why it works lol*/
+@media (min-width: 600px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */
