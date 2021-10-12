@@ -68,5 +68,8 @@ I really...do not know why it works lol*/
     width: 100%;
     text-align: center;
   }
+  .active {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */

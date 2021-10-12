@@ -70,13 +70,19 @@ I really...do not know why it works lol*/
     .navbar ul{
         flex-wrap: wrap;
     }
+
     .navbar-toggle{
         display: block;
     }
+
     .navbar-links {
         display: none; 
         width: 100%;
         text-align: center;
+    }
+
+    .active {
+        display: block;
     }
 }
 
