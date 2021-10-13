@@ -266,3 +266,116 @@ the tablet view is still kinda janky */
     }
 }
 
+/////***** Card Section *****/////
+.card-container{
+    background-color: $primary-light;
+    height: 90vh;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 16.5%;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
+    grid-gap: 65px;
+    align-items: center;
+    width: 84%;
+    .card{
+        background: $primary-light;
+        border: none;
+        text-align: center;
+        //background-color: red;
+        .fas{
+            color: $primary-color
+        }
+        .card-header{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            i{
+                font-size: 1.5rem;
+            }
+            h3{
+                color: $primary-color;
+                font-size: 0.7rem;
+                padding-right: 45px;
+                padding-top: 5px;
+            }
+            p{
+                color: #a8a8a8;
+                font-style: italic;
+                font-size: 0.8rem;
+                padding-top: 5px;
+            }
+        }
+        .img-div{
+            height:200px;
+            width:100%;
+            padding-bottom: 25px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            //object-fit: cover;
+        }
+        p{
+            color:#a8a8a8;
+            font-size: 0.8rem;
+            padding-bottom: 20px;
+            text-align: justify;
+        }
+        .card-bottom{
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            .fa-minus-square{
+                padding-right: 25%;
+            }
+            button{
+                color: $primary-color;
+                text-transform: uppercase;
+                background: none;
+                border: none;
+            }
+        }
+    }
+}
+
+/////***** Card Section Media Query *****/////
+
+@media (max-width: 1200px){
+    .card-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-container{
+        height: 170%;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .card-container{
+        padding-top: 100px;
+        height: 325%;
+    }
+    .card-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-header h3{
+        margin-right: 120px;
+    }
+       
+}
+
+/////***** Box-Pricing Section *****/////
+
+
+
+
+
+
+
+
+
+
