@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #d0defd;
+  background-color: #f2f9fe;
   color: #273a63;
   font-size: 1em;
   font-family: "Roboto", sans-serif;
@@ -21,7 +21,7 @@ body {
 
 .nav-section {
   height: 10vh;
-  background-color: #175bf5;
+  background-color: #4a99f4;
 }
 
 .navbar ul {
@@ -32,7 +32,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #175bf5;
+  background-color: #4a99f4;
   color: white;
 }
 
@@ -100,12 +100,13 @@ wrap it in a div?? */
 .showcase {
   display: -ms-grid;
   display: grid;
-  min-height: 90vh;
+  min-height: 60vh;
   -ms-grid-columns: 10% (minmax(50px, 1fr))[3] 10%;
       grid-template-columns: 10% repeat(3, minmax(50px, 1fr)) 10%;
   -ms-grid-rows: 1fr 2fr 1fr;
       grid-template-rows: 1fr 2fr 1fr;
   background-color: #fff;
+  margin-top: 10%;
 }
 
 .showcase img {
@@ -144,7 +145,7 @@ wrap it in a div?? */
 }
 
 .showcase .info p {
-  color: #175bf5;
+  color: #4a99f4;
   font-size: 2rem;
   letter-spacing: 0.1rem;
 }
@@ -158,10 +159,10 @@ wrap it in a div?? */
   letter-spacing: 1px;
   margin-top: 5%;
   background: none;
-  border: 2px solid #175bf5;
+  border: 2px solid #4a99f4;
   border-radius: 5px;
   outline: none;
-  color: #175bf5;
+  color: #4a99f4;
 }
 
 /* This will align the items correctly,
@@ -218,7 +219,7 @@ the tablet view is still kinda janky */
 
 .wrap .photo-info {
   grid-row: span 4;
-  background-color: #d0defd;
+  background-color: #f2f9fe;
 }
 
 .wrap .photo-info h1 {
@@ -226,7 +227,7 @@ the tablet view is still kinda janky */
   margin-left: 10%;
   font-size: 1.75rem;
   font-weight: 400;
-  color: #175bf5;
+  color: #4a99f4;
   width: 60%;
 }
 
@@ -234,7 +235,7 @@ the tablet view is still kinda janky */
   width: 75%;
   margin-left: 10%;
   padding-bottom: 30px;
-  color: #175bf5;
+  color: #4a99f4;
 }
 
 .wrap .photogallery-container {
@@ -309,7 +310,7 @@ the tablet view is still kinda janky */
 }
 
 .card-grid .card .fas {
-  color: #175bf5;
+  color: #4a99f4;
 }
 
 .card-grid .card .card-header {
@@ -327,7 +328,7 @@ the tablet view is still kinda janky */
 }
 
 .card-grid .card .card-header h3 {
-  color: #175bf5;
+  color: #4a99f4;
   font-size: 0.7rem;
   padding-right: 45px;
   padding-top: 5px;
@@ -373,7 +374,7 @@ the tablet view is still kinda janky */
 }
 
 .card-grid .card .card-bottom button {
-  color: #175bf5;
+  color: #4a99f4;
   text-transform: uppercase;
   background: none;
   border: none;
@@ -402,5 +403,96 @@ the tablet view is still kinda janky */
   .card-header h3 {
     margin-right: 120px;
   }
+  .fa-minus-square {
+    margin-right: 120px;
+  }
+}
+
+.boxprice-section {
+  width: 100%;
+  height: 40vh;
+  background-color: #f2f9fe;
+}
+
+.boxprice-section .boxprice-wrap {
+  width: 50%;
+  height: 80%;
+  margin-left: 25%;
+  margin-top: 5%;
+  -webkit-box-shadow: 2px 2px 18px 10px #4a99f4;
+          box-shadow: 2px 2px 18px 10px #4a99f4;
+}
+
+.boxprice-section .boxprice-wrap .boxprice-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.boxprice-section .boxprice-wrap .boxprice-grid .boxprice-info {
+  background-color: #fff;
+  grid-column: span 3;
+  grid-row: span 3;
+  padding-bottom: 50px;
+}
+
+.boxprice-section .boxprice-wrap .boxprice-grid .boxprice-info h1 {
+  color: #a8a8a8;
+  font-size: 3rem;
+  padding-left: 15%;
+  letter-spacing: 0.2rem;
+}
+
+.boxprice-section .boxprice-wrap .boxprice-grid .boxprice-info h2 {
+  color: #a8a8a8;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-bottom: 28px;
+  padding-left: 15%;
+}
+
+.boxprice-section .boxprice-wrap .boxprice-grid .boxprice-info p {
+  font-size: 0.8rem;
+  width: 75%;
+  color: #4a99f4;
+  padding-left: 15%;
+  line-height: 1.5rem;
+}
+
+.boxprice-section .boxprice-wrap .boxprice-grid .boxprice-prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 35px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.boxprice-section .boxprice-wrap .boxprice-grid .boxprice-prices p {
+  color: #4a99f4;
+  font-size: 0.7rem;
+}
+
+.boxprice-section .boxprice-wrap .boxprice-grid .boxprice-prices p span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.boxprice-section .boxprice-wrap .boxprice-grid .boxprice-prices button {
+  background-color: white;
+  color: #4a99f4;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 0 8px 0 8px;
+  border-radius: 50%;
+  border: 1px none white;
+  margin-left: 50px;
+  margin-bottom: 5px;
 }
 /*# sourceMappingURL=main.css.map */
